@@ -1,0 +1,227 @@
+<div class="nav-bar">
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li class="has-submenu">
+        <a href="#">Products</a>
+        <ul>
+          <li>
+            <a href="#">Dust Collector Filter Bag Manufacturers</a>
+          </li>
+          <li><a href="#">Dust Filtration Bags</a></li>
+          <li><a href="#">Pharma GMP Filter Bags</a></li>
+          <li><a href="#">Ceramic Candle Elements</a></li>
+          <li><a href="#">Pleated Elements</a></li>
+          <li>
+            <a href="#">High Temperature Pleated Elements X600</a>
+          </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Quality</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">BWF Needlona Needlefelts</a></li>
+          <li><a href="#">ExCharge Antistatic Filter Media</a></li>
+          <li>
+            <a href="#">FoodTec Filter Media for the Food Industry</a>
+          </li>
+          <li>
+            <a href="#"
+              >PM-Tec Fine Dust Filter Media with an e-PTFE Membrane</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >MPS Filter Media for Ultrafine Dust Particle Separation</a
+            >
+          </li>
+          <li><a href="#">CS17 Finish for BWF Needlefelts</a></li>
+          <li><a href="#">CS30 CS31 Finish for BWF Needlefelts</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Catalogue</a>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Blog</a>
+        <ul class="nav-dropdown">
+          <li>
+            <a href="#">Covid-19 Update</a>
+          </li>
+          <li>
+            <a href="#"
+              >Choosing The Optimal Filter Media for Dust Collector Bags</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Choice of optimal filter media for dust collector bags</a
+            >
+          </li>
+          <li><a href="#">Conversion factors</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Contact</a>
+        <ul>
+          <li>
+            <a href="#">Information</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<style>
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  nav ul li a:not(:only-child)::after,
+  nav ul li a:visited:not(:only-child)::after {
+    padding-left: 4px;
+    content: url("./icons/plus.svg") !important;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2.2em;
+  }
+  nav ul a {
+    font-family: "ADLaM Display", Sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555454;
+    display: inline-block;
+    padding: 1.5rem 0;
+    font-weight: 700;
+  }
+
+  .has-submenu {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .has-submenu::after {
+    content: url("./icons/plus.svg");
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .has-submenu:hover::after {
+    content: url("./icons/remove.svg");
+  }
+  .has-submenu:hover ul {
+    display: block;
+  }
+
+  .has-submenu ul {
+    position: absolute;
+    top: 100%;
+    left: -2rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    display: none;
+  }
+
+  .has-submenu ul a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-width: 15rem;
+    border-radius: 0.5rem;
+  }
+
+  .has-submenu ul a:hover {
+    color: #09adff;
+  }
+
+  .has-submenu ul a:hover::after {
+    opacity: 1;
+  }
+
+  .has-submenu:hover::after {
+    opacity: 1;
+  }
+
+  .has-submenu:hover > a {
+    /* color: #e8e8e8; */
+  }
+
+  button {
+    appearance: none;
+    border: 1px solid #9e70eb;
+    color: #9e70eb;
+    background-color: transparent;
+    border-radius: 10rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Air */
+  nav ul a {
+    transition-property: color;
+  }
+
+  .has-submenu::after {
+    transform: rotate(0);
+    transition-property: opacity, transform;
+  }
+
+  .has-submenu:hover::after {
+    /* transform: rotate(180deg); */
+  }
+
+  .has-submenu ul {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    /* transform: translateY(-19rem); */
+    border: 1px solid rgba(72, 72, 72, 0.1);
+    border-bottom-color: rgba(72, 72, 72, 0.1);
+    border-bottom: 2px solid #09adff;
+    padding: 10px 0;
+    transform-origin: top;
+    transition-property: opacity, visibility, transform, height;
+  }
+
+  .has-submenu:hover ul {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    /* transform: translateY(0); */
+  }
+
+  .has-submenu ul a {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    transition-property: color;
+  }
+
+  .has-submenu ul a::after {
+    transition-property: opacity;
+  }
+
+  nav ul a,
+  .has-submenu::after,
+  .has-submenu ul,
+  .has-submenu ul a,
+  .has-submenu ul a::after {
+    transition-duration: var(--transition-duration);
+    transition-timing-function: ease-in-out;
+  }
+</style>

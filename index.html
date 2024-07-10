@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple dropdown menu</title>
-
-	<!-- Reset -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <!--  Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="css/stellarnav.min.css"
+    />
     <!--Custom CSS -->
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-	<div id="hero">
-		<nav>
-            <ul>
-                <li class="has-submenu">
-                    <a href="#">Services</a>
-
-                    <ul>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">Software Development</a></li>
-                        <li><a href="#">Online Retail</a></li>
-                        <li><a href="#">Graphics</a></li>
-                    </ul>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <div class="logo-container">
+            <a href="#">
+              <img
+                src="./image/sefari-dust-filtration.png"
+                alt="logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <div class="contact">
+            <a href="#tel:+6495274409">Call NZ +64 9 527 4409</a>
+            <a href="#tel:+610288221700">Call AU +61 02 8822 1700</a>
+            <a href="#" class="help-button">How Can We Help?</a>
+          </div>
+        </div>
+        <nav class="nav-container">
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!" class="menu-item">Products</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#">Dust Collector Filter Bag Manufacturers</a>
                 </li>
-                <li class="has-submenu">
-                    <a href="#">Company</a>
-                    <ul>
-                        <li><a href="#">Apple Inc.</a></li>
-                        <li><a href="#">Google LLC</a></li>
-                        <li><a href="#">Microsoft Corporation</a></li>
-                        <li><a href="#">Amazon.com, Inc.</a></li>
-                        <li><a href="#">Facebook, Inc.</a></li>
-                    </ul>
-                    
+                <li><a href="#">Dust Filtration Bags</a></li>
+                <li><a href="#">Pharma GMP Filter Bags</a></li>
+                <li><a href="#">Ceramic Candle Elements</a></li>
+                <li><a href="#">Pleated Elements</a></li>
+                <li>
+                  <a href="#">High Temperature Pleated Elements X600</a>
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!" class="menu-item">Quality</a>
+              <ul class="nav-dropdown">
+                <li><a href="#">BWF Needlona Needlefelts</a></li>
+                <li><a href="#">ExCharge Antistatic Filter Media</a></li>
+                <li>
+                  <a href="#">FoodTec Filter Media for the Food Industry</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >PM-Tec Fine Dust Filter Media with an e-PTFE Membrane</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >MPS Filter Media for Ultrafine Dust Particle Separation</a
+                  >
+                </li>
+                <li><a href="#">CS17 Finish for BWF Needlefelts</a></li>
+                <li><a href="#">CS30 CS31 Finish for BWF Needlefelts</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Catalogue</a>
+            </li>
+            <li>
+              <a href="#!" class="menu-item">Blog</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#">Covid-19 Update</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Choosing The Optimal Filter Media for Dust Collector
+                    Bags</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Choice of optimal filter media for dust collector bags</a
+                  >
+                </li>
+                <li><a href="#">Conversion factors</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+              </ul>
+            </li>
+            <li>
+              <a href="#!" class="menu-item">Contact</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#">Information</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-	</div>
-</body>
+      </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
